@@ -1,5 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
-How to setup a script for all running:
+
+## How to setup a script for all running:
 https://chatgpt.com/share/676286c9-1658-800d-91e2-686bd6791e45
 
 ## Getting Started
