@@ -24,9 +24,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === "POST") {
     let { command } = req.body;
 
-    if (["B", "R", "F", "L", "S"].includes(command)) {
+    if (["B", "R", "F", "L", "S", "Q", "W", "E", "T"].includes(command)) {
       try {
-        command = command === 'B' ? 'F' : command === 'F' ? 'B' : command;
+        // command = command === "B" ? "F" : command === "F" ? "B" : command;
         await handleControlCommand(command);
         res.status(200).json({ message: `Command '${command}' processed` });
       } catch (error) {

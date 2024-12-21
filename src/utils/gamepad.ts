@@ -21,7 +21,7 @@ export function setupGamepadController(sendCommand: SendCommandType) {
     gp.buttons.forEach((btn, index) => {
       if (buttonMap.hasOwnProperty(index)) {
         if (btn.pressed && !buttonState[index]) {
-          sendCommand(buttonMap[index]); // Send press command
+          sendCommand(`${buttonMap[index]}`); // Send press command
           buttonState[index] = true;
         } else if (!btn.pressed && buttonState[index]) {
           sendCommand("S"); // Send stop command on release
